@@ -1,0 +1,9 @@
+{
+  "name": "BFAVJsonUpdate",
+  "version": "1.0.0",
+  "scripts": {
+    "animals": "node insertAnimals.js"
+  },
+  "author": "Filipe Mazzon Ribeiro",
+  "license": "ISC"
+}
