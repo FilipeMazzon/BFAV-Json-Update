@@ -1,10 +1,12 @@
-
-
 const insertAnimals = (config, name, type) => {
+    if(typeof config.FarmAnimals[type] === "undefined"){
+        return console.log(`You are trying to add ${name} in a type is'nt exist :${type}`);
+    }
     if(config.FarmAnimals[type].Types.includes(name)){
-        console.log(`You are trying to add ${name} as animal but this animal was already include, I will Skip This`);
+        console.warn(`You are trying to add ${name} as animal but this animal was already include, I will Skip This`);
         return;
     }
+    console.log(`Insert ${name} as ${type}`);
     return config.FarmAnimals[type].Types.push(name);
 };
 
